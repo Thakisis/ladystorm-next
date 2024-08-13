@@ -1,6 +1,6 @@
 
 
-const VideoFull = ({ setVideo, videoFile = "underwater", style }) => {
+const VideoFull = ({ setVideo, videoFile = "Underwater", style }) => {
     /*
         const videoRef=useRef(null)
         useEffect(()=>{
