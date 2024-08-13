@@ -1,7 +1,8 @@
-import { Inter } from "next/font/google";
+import { Josefin_Sans } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import LadyAudioPlayer from "@/components/LadyAudioPlayer";
+import Footer from "@/components/Footer";
+const Josefine = Josefin_Sans({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +12,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${Josefine.className} dark`}>
+        <LadyAudioPlayer />
+        {children}
+        <Footer />
+        </body>
     </html>
   );
 }

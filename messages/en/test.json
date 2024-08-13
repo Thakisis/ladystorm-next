@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "name": " eng Juan Péreza",
+        "position": " eng CTO, Empresa X",
+        "testimony": "eng TechPro transformó completamente nuestra infraestructura IT. Su equipo es altamente profesional y siempre están disponibles para resolver cualquier problema que surja. ¡Altamente recomendados!"
+    },
+    {
+        "id": "2",
+        "name": "eng María López",
+        "position": "eng CEO, Compañía Y",
+        "testimony": "eng La integración de sistemas que realizaron para nosotros fue impecable. Ahora, todos nuestros procesos están automatizados y funcionamos con mucha más eficiencia. TechPro realmente entiende las necesidades del cliente."
+    },
+    {
+        "id": "3",
+        "name": "eng Carlos García",
+        "position": "eng Gerente de Operaciones, Organización Z",
+        "testimony": "eng Gracias a TechPro, nuestra empresa ha dado un salto significativo en la transformación digital. Su enfoque personalizado y sus soluciones innovadoras nos han ayudado a alcanzar nuevos niveles de productividad."
+    }
+]
