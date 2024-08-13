@@ -60,16 +60,11 @@ export async function Sunshine() {
                 <Image
                     src="/Images/TurnTableSunshine.webp"
                     alt="Sunshine vinyl"
-
                     priority
                     width="960"
                     height="1080"
                     sizes="20vh auto"
-
                     style={{
-
-
-
 
                     }}
                     className=' object-contain object-right-bottom'
