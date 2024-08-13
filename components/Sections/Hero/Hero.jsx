@@ -3,10 +3,13 @@ import { getTranslator } from '@/lib'
 import { NeonClassName } from '@/components/fonts'
 import LadyImage from './LadyImage'
 import TextBlock from '@/components/TextBlock'
+import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
+import { SparklesCore } from '@/components/ui/sparkles'
 export async function Hero() {
     const { t } = await getTranslator('Sections')
     return (
         <div className="relative flex flex-col-reverse  min-h-screen lg:flex-row   w-full flex-wrap items-center pointer-events-none ">
+
             <div className="relative flex  w-full h-screen lg:w-1/2 lg:h-screen flex-1">
                 <LadyImage />
                 <Image
@@ -62,9 +65,13 @@ export async function Hero() {
                             rotate: "180deg"
                         }}
                     />
+
+                </div>
+                <div className={`relative p-8 z-10  mb-3 text-xl font-light`}>
+
+                    <TextGenerateEffect className="text-xl font-light" words={t("hero")} />
                 </div>
 
-                <TextBlock section="hero" color="text-white" />
             </div>
             <div className="absolute top-0 w-full h-screen flex  justify-end items-end text-xl">
                 <div className=" mr-12 mb-20 flex justify-center gap-4">

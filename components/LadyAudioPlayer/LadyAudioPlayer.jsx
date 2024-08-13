@@ -66,11 +66,16 @@ function LadyAudioPlayer(props) {
     const [isOpen, setIsOpen] = useState(false)
     return (
         <>
-            <div className={`fixed bottom-[16px] left-[10px] z-[100] bg-black p-1 rounded-full border-1 border-white/20 backdrop-blur-sm ${isOpen ? "opacity-0 pointer-events-none" : "opacity-1 pointer-events-auto"} transition-all `}>
-                <HoverBorderGradient>
+            <div className={`fixed bottom-[0px] left-[5px] z-[100] bg-black p-1 rounded-full border-1 border-white/20 backdrop-blur-sm ${isOpen ? "opacity-0 pointer-events-none" : "opacity-1 pointer-events-auto"} transition-all `}>
+                <div className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                    <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                    <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+                        <AudioLinesIcon size={20} onClick={() => setIsOpen(!isOpen)} className='cursor-pointer text-white/80 hover:text-white/100 ' />
+                    </span>
+                </div>
 
-                    <AudioLinesIcon size={25} onClick={() => setIsOpen(!isOpen)} className='cursor-pointer text-white/80 hover:text-white/100 ' />
-                </HoverBorderGradient>
+
+
             </div>
             <div className='flex fixed z-[99] bottom-0 left-0 w-full  '>
 
@@ -144,3 +149,4 @@ function LadyAudioPlayer(props) {
 
 
 export default LadyAudioPlayer
+

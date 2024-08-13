@@ -3,7 +3,7 @@ import { IconInsta, IconFb, IconMail } from '@/components/SocialIcons'
 
 const Footer = () => {
     return (
-        <footer className="z-[99990] bottom-0 left-0  w-full bg-white border-t border-gray-200 shadow flex md:flex md:items-center justify-between  px-8 pl-14 py-4 dark:bg-gray-800 dark:border-gray-600 ">
+        <footer className="z-[99990] bottom-0 left-0  w-full bg-white border-t border-gray-200 shadow flex md:flex md:items-center justify-between  px-8 pl-[5rem] py-4 dark:bg-gray-800 dark:border-gray-600 ">
             <span className="text-sm text-gray-500 sm:text-center dark:text-gray-100 flex justify-center items-center">
                 LadyStorm.cz
             </span>
