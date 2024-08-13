@@ -6,7 +6,7 @@ import TexTblock from '@/components/TextBlock'
 export async function Burleska() {
     const { t } = await getTranslator('Sections')
     return (
-        <div className="relative flex flex-col-reverse  min-h-screen lg:flex-row   w-full flex-wrap items-center pointer-events-none ">
+        <div className="relative flex flex-col  min-h-screen lg:flex-row   w-full flex-wrap items-center pointer-events-none ">
             <div className="relative flex flex-col justify-center items-center lg:h-full w-full w-50% flex-1 pt-20  text-white ">
 
                 <div className="relative flex justify-center items-center">
