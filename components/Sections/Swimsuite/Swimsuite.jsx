@@ -75,7 +75,7 @@ export async function Swimsuite() {
 
                 <div className="relative flex justify-center items-center">
 
-                    <NeonTitle section="sing" color="254, 100%, 52%" />
+                    <NeonTitle section="swim" color="254, 100%, 52%" />
 
                 </div>
                 <Textblock section="swim" color="text-white" />
