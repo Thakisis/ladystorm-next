@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { getTranslator } from '@/lib'
 import NeonTitle from '@/components/NeonTitle'
+import Textblock from '@/components/TextBlock'
 
 
 export async function Sunshine() {
@@ -80,11 +81,7 @@ export async function Sunshine() {
                     <NeonTitle section="sunshine" color="0, 100%, 52%" colorSpan="41, 100%, 57%" />
 
                 </div>
-                <div className='p-8 z-10 text-white '>
-                    {t.rich('sunshine', {
-                        p: (children) => <p >{children}</p>,
-                    })}
-                </div>
+                <Textblock section="sunshine" />
             </div>
         </div>
     )

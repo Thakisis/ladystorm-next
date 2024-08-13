@@ -8,7 +8,7 @@ export async function Swimsuite() {
     return (
 
         <div className="relative flex flex-col-reverse  min-h-screen lg:flex-row   w-full flex-wrap items-center pointer-events-none bg-black">
-            <VideoFull />
+            <VideoFull videoFile='Underwater' />
             <div className="relative flex  w-full h-screen lg:w-1/2 lg:h-screen flex-1 justify-start  ">
 
 
