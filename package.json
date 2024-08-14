@@ -23,6 +23,7 @@
     "react-device-detect": "^2.2.3",
     "react-dom": "^18",
     "react-modern-audio-player": "1.4.0-rc.2",
+    "sass": "^1.77.8",
     "tailwind-merge": "^2.5.0",
     "tailwindcss-animate": "^1.0.7",
     "tailwindcss-animated": "^1.1.2"

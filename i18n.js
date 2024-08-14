@@ -13,6 +13,7 @@ export default getRequestConfig(async ({ locale }) => {
     const localeMessages = {
         Navigation: { ...(await import(`/messages/${locale}/Navigation.json`)).default },
            Sections: { ...(await import(`/messages/${locale}/Sections.json`)).default },
+           offers: { ...(await import(`/messages/${locale}/offers.json`)).default },
     }
     const messages = { ...localeMessages }
     return {

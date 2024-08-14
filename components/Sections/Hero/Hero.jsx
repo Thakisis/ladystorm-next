@@ -4,7 +4,7 @@ import { NeonClassName } from '@/components/fonts'
 import LadyImage from './LadyImage'
 import TextBlock from '@/components/TextBlock'
 import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
-import { SparklesCore } from '@/components/ui/sparkles'
+
 export async function Hero() {
     const { t } = await getTranslator('Sections')
     return (

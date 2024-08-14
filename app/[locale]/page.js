@@ -1,5 +1,5 @@
-import { TracingBeam } from "@/components/ui/tracing-beam";
 import Home from "@/components/Home";
+import {unstable_setRequestLocale} from 'next-intl/server';
 export default async function HomePage() {
   
 
