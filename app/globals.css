@@ -98,4 +98,28 @@
 
     }
   }
+
+  .laserTop {
+    -webkit-mask-image: url(/Images/Noise2.webp);
+    mask-image: url(/Images/Noise2.webp);
+
+    mask-mode: luminance;
+    -webkit-mask-mode: luminance;
+    animation: laserMove infinite 30s linear;
+  }
+
+  @keyframes laserMove {
+    0% {
+      mask-position: 0 0;
+    }
+
+    50% {
+      mask-position: 225px 0px;
+    }
+
+    100% {
+      mask-position: 450px 0px;
+    }
+  }
+
 }

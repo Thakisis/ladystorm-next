@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { getTranslator } from '@/lib'
 import { NeonClassName } from '@/components/fonts'
 import LadyImage from './LadyImage'
-import TextBlock from '@/components/TextBlock'
+
 import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
 
 export async function Hero() {
@@ -13,8 +13,9 @@ export async function Hero() {
             <div className="relative flex  w-full h-screen lg:w-1/2 lg:h-screen flex-1">
                 <LadyImage />
                 <Image
+
                     src="/Images/LaserBig.webp"
-                    alt="Laer image over ladystorm"
+                    alt="Laser image over ladystorm"
                     fill
                     style={{
                         objectFit: "contain",
@@ -22,7 +23,7 @@ export async function Hero() {
                         maskMode: "luminance"
                     }}
                     priority
-                    className={`absolute object-center-bottom lg:object-left-bottom  animate-laserMove `}
+                    className={`absolute object-center-bottom lg:object-left-bottom  laserTop`}
                 />
             </div>
             <div className="relative flex flex-col justify-center items-center lg:h-full w-full w-50% flex-1 pt-20  text-white ">

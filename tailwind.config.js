@@ -88,12 +88,43 @@ module.exports = {
           "92.5%": {
             opacity: " 1;"
           },
+        },
+        glow: {
+
+          "0%": {
+            filter: "brightness(1)  saturate(1);"
+          },
+
+          "50%": {
+            filter: "brightness(2)  saturate(2);"
+          },
+
+          "100%": {
+            filter: "brightness(1)  saturate(1);"
+          }
+        },
+
+        colorRotation: {
+          "0%": {
+            filter: "hue-rotate(-180deg);"
+          },
+
+          "50%": {
+            filter: "hue-rotate(180deg);"
+          },
+
+          "100%": {
+            filter: "hue-rotate(-180deg);"
+          },
         }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "Blink": "blinkNeon 3s ease-in-out infinite"
+        "Blink": "blinkNeon 3s ease-in-out infinite",
+        "glow": "glow 2s infinite",
+        "hueRotation": "colorRotation 8s infinite linear forwards",
+
       },
     },
   },
