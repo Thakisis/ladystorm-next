@@ -2,10 +2,11 @@ import Logo from "./Logo"
 import { menus } from "@/data/Menus"
 import { getTranslator } from "@/lib"
 import LangSelector from "./LangSelector"
+import { Link } from "@/navigation"
 async function Navbar(props) {
     const { locale, t } = await getTranslator("Navigation")
     const menulist = menus.map(item => {
-        return <div key={item}>{t(item)}</div>
+        return <Link href={`/${item}`} key={item}>{t(item)}</Link>
     })
     return (
         <div className="flex  absolute w-full justify-between px-10 py-5 b  items-center">

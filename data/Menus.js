@@ -1,1 +1,1 @@
-export const menus = ["laser", "dance", "burleska", "sing", "about"]
+export const menus = ["laser", "dance", "burleska", "sing", "about","contact"]

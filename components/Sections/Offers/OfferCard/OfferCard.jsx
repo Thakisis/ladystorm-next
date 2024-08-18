@@ -12,9 +12,9 @@ async function CardOffer({ offer }) {
             <Link className={styles.neonButton} href={'/contact'}>Hire Service</Link>
             <div className={`${styles.cardWrap} `}>
                 <OfferCardClient className={styles.card}>
-                    <div className={styles.cardBg} >
+                    <span className={styles.cardBg}  >
                         <Image src={`/Images/Offers/${offer}bg.webp`} width="520" height="774" alt="offer 1" className={styles.offerbg} ></Image>
-                    </div>
+                    </span>
                     <div >
                         <Image src={`/Images/Offers/${offer}fg.webp`} width="520" height="774" alt="offer 1" className={styles.offerfg}></Image>
                     </div>

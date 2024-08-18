@@ -18,6 +18,12 @@ function OfferCardClient({ children, className }) {
         const transition = "1s cubic-bezier(0.23, 1, 0.32, 1)"
         e.target.style.transform = transform
         e.target.style.transition = transition
+        const bg = e.target.querySelector('span')
+        const transformBG = `translateX(${PX * -50}px) translateY(${PY * -50}px)`
+        bg.style.transform = transformBG
+        bg.style.transition = transition
+
+
     }
     const handleMouseEnter = () => {
         clearTimeout(OutHandler)

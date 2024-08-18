@@ -15,6 +15,7 @@ export function generateStaticParams() {
 }
 
 export default function RootLayout({ children }) {
+  console.log("rerender")
   return (
     <html lang="en">
       <body className={`${Josefine.className} dark`}>
